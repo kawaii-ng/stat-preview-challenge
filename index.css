@@ -1,0 +1,188 @@
+body {
+
+    background: hsl(233, 47%, 7%);
+    color: white;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    
+}
+
+.card {
+
+    position: relative;
+    margin: auto;
+    background: hsl(244, 38%, 16%);
+    width: 300px;
+    height: fit-content;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.card-container {
+
+    position: absolute;
+
+}
+
+.card-img {
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background-image: url('./images/image-header-mobile.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    opacity: 1;
+
+}
+
+.card-filter {
+
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 300px;
+    height: 220px;
+    background:hsl(277, 64%, 61%);
+    opacity: .4;
+
+}
+
+.card-content {
+
+    padding: 0em 0em;
+    padding-bottom: 2em;
+    margin-top: 250px;
+
+}
+
+.card-title {
+
+    padding: 0em 1.5em;
+    color: hsl(0, 0%, 100%);
+
+}
+
+
+.insight {
+    
+    color: hsl(277, 64%, 61%);
+    
+}
+
+p {
+
+    padding: 1em 1em;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+
+}
+
+.card-statistic {
+
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+
+}
+
+.card-item {
+
+    margin: 1em;
+
+}
+
+.card-item-num {
+
+    color:hsl(0, 0%, 100%);
+    font-size: 20px;
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+
+        height: 100vh;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .card {
+
+        margin: auto;
+        width: fit-content;
+
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .card-img {
+
+        position: absolute;
+        background-image: url('./images/image-header-desktop.jpg');
+        background-size: cover;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .card-filter {
+
+        left: 0%;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .card-content {
+
+        position: relative;
+        width: 50%;
+        margin: 0;
+
+    }
+
+    .card-title {
+
+        text-align: left;
+        padding-top: 1.5em;
+        padding-left: 2em;
+        padding-right: 5em;
+
+
+    }
+
+    p {
+
+        text-align: left;
+        padding-left: 3em;
+        padding-right: 7em;
+
+    }
+
+    .card-statistic {
+
+        display: flex;
+        padding-left: 2em;
+        padding-right: 7em;
+        text-align: left;
+
+    }
+    
+}
